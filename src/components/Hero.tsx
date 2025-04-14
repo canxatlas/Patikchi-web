@@ -98,7 +98,7 @@ export default function Hero() {
               >
                 <Text
                   fontSize={{ base: '3xl', sm: '4xl', md: '5xl', lg: '6xl' }}
-                  fontWeight="bold"
+                  fontWeight="black"
                   color="#A67F56"
                   lineHeight="1.2"
                   textAlign={{ base: 'center', md: 'left' }}

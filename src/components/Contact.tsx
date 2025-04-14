@@ -66,7 +66,7 @@ export default function Contact() {
         >
           <Text
             fontSize={{ base: '3xl', md: '4xl' }}
-            fontWeight="medium"
+            fontWeight="black"
             color="#A67F56"
             mb={4}
           >
@@ -98,7 +98,7 @@ export default function Contact() {
             transition={{ duration: 0.5 }}
             flex="1"
           >
-            <Text fontSize="2xl" fontWeight="medium" color="#A67F56" mb={6}>
+            <Text fontSize="2xl" fontWeight="bold" color="#A67F56" mb={6}>
               Get in Touch
             </Text>
 
@@ -121,7 +121,7 @@ export default function Contact() {
             </VStack>
 
             <Box mt={8}>
-              <Text fontSize="xl" fontWeight="medium" color="#A67F56" mb={4}>
+              <Text fontSize="xl" fontWeight="bold" color="#A67F56" mb={4}>
                 Wholesale Inquiries
               </Text>
               <Text color="#A67F56" opacity={0.8}>

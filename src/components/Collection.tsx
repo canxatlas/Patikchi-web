@@ -227,7 +227,7 @@ const ProductCard: React.FC<ProductProps> = ({
           viewport={{ once: true }}
           transition={{ ...defaultTransition, delay: 0.2 }}
         >
-          <Text fontSize="3xl" color="#A67F56" fontWeight="medium" mb="4">
+          <Text fontSize="3xl" color="#A67F56" fontWeight="black" mb="4">
             {title}
           </Text>
         </MotionDiv>
@@ -372,7 +372,7 @@ const BenefitCard: React.FC<{
     >
       {React.cloneElement(icon, { boxSize: '2rem' })}
     </MotionDiv>
-    <Text fontSize="xl" color="#A67F56" fontWeight="medium" mb="3">
+    <Text fontSize="xl" color="#A67F56" fontWeight="bold" mb="3">
       {title}
     </Text>
     <Text color="#A67F56" opacity={0.8}>
@@ -456,7 +456,7 @@ export default function Collection() {
           <Text
             fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
             color="#A67F56"
-            fontWeight="medium"
+            fontWeight="bold"
             mb="4"
           >
             Our Collection
@@ -483,7 +483,7 @@ export default function Collection() {
           <Text
             fontSize={{ base: '3xl', md: '4xl' }}
             color="#A67F56"
-            fontWeight="medium"
+            fontWeight="black"
             mb="4"
           >
             Why Choose Patikchi Booties ?

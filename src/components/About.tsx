@@ -33,7 +33,7 @@ const Feature: React.FC<FeatureProps> = ({ icon, title, description }) => (
     </Box>
     <Text
       fontSize="md"
-      fontWeight="medium"
+      fontWeight="bold"
       color="#A67F56"
       mb={3}
       textAlign="center"
@@ -64,7 +64,7 @@ export default function About() {
               <Heading
                 as="h2"
                 fontSize={{ base: '2xl', md: '3xl' }}
-                fontWeight="normal"
+                fontWeight="black"
                 color="#A67F56"
                 fontFamily="Playfair Display"
                 position="relative"
@@ -121,7 +121,7 @@ export default function About() {
             <VStack spacing={4} align="start">
               <Text
                 fontSize={{ base: 'xl', md: '2xl' }}
-                fontWeight="normal"
+                fontWeight="bold"
                 color="#A67F56"
                 fontFamily="Playfair Display"
               >

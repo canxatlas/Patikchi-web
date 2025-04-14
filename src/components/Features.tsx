@@ -39,7 +39,9 @@ export default function Features() {
   return (
     <Box p={4}>
       <Stack gap={4} as={Container} maxW="3xl" textAlign="center">
-        <Heading fontSize="3xl">Our Features</Heading>
+        <Heading fontSize="3xl" fontWeight="bold">
+          Our Features
+        </Heading>
         <Text color="gray.600" fontSize="xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
