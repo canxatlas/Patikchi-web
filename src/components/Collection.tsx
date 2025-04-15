@@ -109,7 +109,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
         <ModalCloseButton />
         <ModalBody pb={6}>
           <form
-            action="https://formsubmit.co/alelentini@live.com"
+            action="https://formsubmit.co/cemal989@hotmail.com"
             method="POST"
           >
             <VStack spacing={4}>

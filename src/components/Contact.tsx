@@ -142,7 +142,7 @@ export default function Contact() {
             w="full"
           >
             <form
-              action="https://formsubmit.co/alelentini@live.com"
+              action="https://formsubmit.co/cemal989@hotmail.com"
               method="POST"
               style={{ width: '100%' }}
             >
