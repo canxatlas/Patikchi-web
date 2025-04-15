@@ -62,9 +62,9 @@ interface SizeProps {
 interface ProductProps {
   title: string;
   description: string;
-  colors: string[];
+  colors: Array<{ color: string; image: any }>;
   sizes: SizeProps[];
-  image: string;
+  image: any;
   imagePosition?: 'left' | 'right';
 }
 
@@ -201,6 +201,12 @@ const ProductCard: React.FC<ProductProps> = ({
 }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
+  const [currentImage, setCurrentImage] = useState(image);
+
+  const handleColorClick = (color: string, colorImage: string) => {
+    setSelectedColor(color);
+    setCurrentImage(colorImage);
+  };
 
   return (
     <MotionDiv
@@ -227,7 +233,7 @@ const ProductCard: React.FC<ProductProps> = ({
           viewport={{ once: true }}
           transition={{ ...defaultTransition, delay: 0.2 }}
         >
-          <Text fontSize="3xl" color="#A67F56" fontWeight="black" mb="4">
+          <Text fontSize="3xl" color="#A67F56" fontWeight="bold" mb="4">
             {title}
           </Text>
         </MotionDiv>
@@ -249,7 +255,7 @@ const ProductCard: React.FC<ProductProps> = ({
             Available Colors:
           </Text>
           <HStack spacing="2">
-            {colors.map((color: string, index: number) => (
+            {colors.map((colorObj, index) => (
               <MotionDiv
                 key={index}
                 style={{ display: 'inline-block' }}
@@ -263,11 +269,15 @@ const ProductCard: React.FC<ProductProps> = ({
               >
                 <Circle
                   size="6"
-                  bg={color}
+                  bg={colorObj.color}
                   cursor="pointer"
-                  onClick={() => setSelectedColor(color)}
+                  onClick={() =>
+                    handleColorClick(colorObj.color, colorObj.image)
+                  }
                   border={
-                    selectedColor === color ? '2px solid #A67F56' : 'none'
+                    selectedColor === colorObj.color
+                      ? '2px solid #A67F56'
+                      : 'none'
                   }
                 />
               </MotionDiv>
@@ -337,7 +347,13 @@ const ProductCard: React.FC<ProductProps> = ({
         transition={defaultTransition}
         whileHover={{ scale: 1.05 }}
       >
-        <Image src={image} alt={title} w="full" h="auto" objectFit="contain" />
+        <Image
+          src={currentImage}
+          alt={title}
+          w="full"
+          h="auto"
+          objectFit="contain"
+        />
       </MotionDiv>
 
       <ContactForm isOpen={isOpen} onClose={onClose} productTitle={title} />
@@ -387,38 +403,57 @@ export default function Collection() {
       title: 'Laced Booties',
       description:
         'Classic design with laces for a secure and adjustable fit. Soft lambskin with natural wool inside.',
-      colors: ['#8B572A', '#2B4C7E', '#000000', '#FFC0CB', '#5F9EA0'],
+      colors: [
+        { color: '#8B4513', image: require('../assets/laced/brown.png') },
+        { color: '#1E90FF', image: require('../assets/laced/blue.png') },
+        { color: '#D2B48C', image: require('../assets/laced/classic.png') },
+        { color: '#F5F5DC', image: require('../assets/laced/beije.png') },
+        { color: '#FFC0CB', image: require('../assets/laced/pink.png') },
+        { color: '#87CEEB', image: require('../assets/laced/lightblue.png') },
+      ],
       sizes: [
         { range: '0-9 months', note: 'Size (1-2)' },
         { range: '9-18 months', note: 'Size (3-4)' },
         { range: '18-24 months', note: 'Size (5)' },
       ],
-      image: require('../assets/laced-booties.png'),
+      image: require('../assets/laced/classic.png'),
     },
     {
       title: 'Velcro Booties',
       description:
         'Easy on-and-off design with velcro closure. Perfect for quick changes while maintaining warmth.',
-      colors: ['#FFC0CB', '#5F9EA0', '#8B572A', '#2B4C7E', '#000000'],
+      colors: [
+        { color: '#8B4513', image: require('../assets/Velcro/brown.png') },
+        { color: '#1E90FF', image: require('../assets/Velcro/blue.png') },
+        { color: '#D2B48C', image: require('../assets/Velcro/classic.png') },
+        { color: '#F5F5DC', image: require('../assets/Velcro/beije.png') },
+        { color: '#FFC0CB', image: require('../assets/Velcro/pink.png') },
+      ],
       sizes: [
         { range: '0-9 months', note: 'Size (1-2)' },
         { range: '9-18 months', note: 'Size (3-4)' },
         { range: '18-24 months', note: 'Size (5)' },
       ],
-      image: require('../assets/velcro-booties.png'),
+      image: require('../assets/Velcro/classic.png'),
       imagePosition: 'left',
     },
     {
       title: 'Classy Booties',
       description:
         'Elegant slip-on design with a cozy cuff. Stylish and practical for everyday comfort.',
-      colors: ['#2B4C7E', '#000000', '#8B572A', '#FFC0CB', '#5F9EA0'],
+      colors: [
+        { color: '#8B4513', image: require('../assets/classy/brown.png') },
+        { color: '#1E90FF', image: require('../assets/classy/blue.png') },
+        { color: '#D2B48C', image: require('../assets/classy/classic.png') },
+        { color: '#F5F5DC', image: require('../assets/classy/beije.png') },
+        { color: '#FFC0CB', image: require('../assets/classy/pink.png') },
+      ],
       sizes: [
         { range: '0-9 months', note: 'Size (1-2)' },
         { range: '9-18 months', note: 'Size (3-4)' },
         { range: '18-24 months', note: 'Size (5)' },
       ],
-      image: require('../assets/classy-booties.png'),
+      image: require('../assets/classy/classic.png'),
     },
   ];
 

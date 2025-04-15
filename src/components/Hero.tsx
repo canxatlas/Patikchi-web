@@ -191,12 +191,14 @@ export default function Hero() {
             transition={{ ...defaultTransition, delay: 0.3 }}
             maxW={{ base: '100%', md: '600px' }}
             w="full"
+            px={{ base: 4, md: 0 }}
           >
             <MotionBox
               variants={scaleInVariant}
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
               position="relative"
+              w="full"
             >
               {/* Image glow effect */}
               <Box
@@ -219,7 +221,7 @@ export default function Hero() {
                 objectFit="contain"
                 position="relative"
                 zIndex={1}
-                maxH={{ base: '300px', md: 'none' }}
+                maxH={{ base: '400px', md: 'none' }}
                 filter="drop-shadow(0px 10px 20px rgba(166, 127, 86, 0.2))"
               />
             </MotionBox>

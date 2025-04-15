@@ -139,107 +139,152 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             flex="1"
-            as="form"
-            // @ts-ignore - MotionBox doesn't properly type form attributes
-            action="https://formsubmit.co/alelentini@live.com"
-            method="POST"
+            w="full"
           >
-            <VStack spacing={6} align="stretch">
-              <FormControl isRequired>
-                <FormLabel color="#A67F56">Full Name</FormLabel>
-                <Input
-                  name="name"
-                  placeholder="Your name"
-                  bg="white"
-                  borderColor="#D4B68C"
-                  _hover={{ borderColor: '#A67F56' }}
-                  _focus={{ borderColor: '#A67F56', boxShadow: 'none' }}
-                  _placeholder={{ color: '#A67F56', opacity: 0.5 }}
+            <form
+              action="https://formsubmit.co/alelentini@live.com"
+              method="POST"
+              style={{ width: '100%' }}
+            >
+              <VStack spacing={{ base: 4, md: 6 }} align="stretch" w="full">
+                <FormControl isRequired>
+                  <FormLabel
+                    color="#A67F56"
+                    fontSize={{ base: 'sm', md: 'md' }}
+                  >
+                    Full Name
+                  </FormLabel>
+                  <Input
+                    name="name"
+                    placeholder="Your name"
+                    bg="white"
+                    borderColor="#D4B68C"
+                    _hover={{ borderColor: '#A67F56' }}
+                    _focus={{ borderColor: '#A67F56', boxShadow: 'none' }}
+                    _placeholder={{ color: '#A67F56', opacity: 0.5 }}
+                    size={{ base: 'sm', md: 'md' }}
+                    h={{ base: '40px', md: '48px' }}
+                  />
+                </FormControl>
+
+                <FormControl isRequired>
+                  <FormLabel
+                    color="#A67F56"
+                    fontSize={{ base: 'sm', md: 'md' }}
+                  >
+                    Email Address
+                  </FormLabel>
+                  <Input
+                    name="email"
+                    type="email"
+                    placeholder="Your email"
+                    bg="white"
+                    borderColor="#D4B68C"
+                    _hover={{ borderColor: '#A67F56' }}
+                    _focus={{ borderColor: '#A67F56', boxShadow: 'none' }}
+                    _placeholder={{ color: '#A67F56', opacity: 0.5 }}
+                    size={{ base: 'sm', md: 'md' }}
+                    h={{ base: '40px', md: '48px' }}
+                  />
+                </FormControl>
+
+                <FormControl isRequired>
+                  <FormLabel
+                    color="#A67F56"
+                    fontSize={{ base: 'sm', md: 'md' }}
+                  >
+                    Phone Number
+                  </FormLabel>
+                  <Input
+                    name="phone"
+                    placeholder="Phone number with Country Code"
+                    bg="white"
+                    borderColor="#D4B68C"
+                    _hover={{ borderColor: '#A67F56' }}
+                    _focus={{ borderColor: '#A67F56', boxShadow: 'none' }}
+                    _placeholder={{ color: '#A67F56', opacity: 0.5 }}
+                    size={{ base: 'sm', md: 'md' }}
+                    h={{ base: '40px', md: '48px' }}
+                  />
+                </FormControl>
+
+                <FormControl>
+                  <FormLabel
+                    color="#A67F56"
+                    fontSize={{ base: 'sm', md: 'md' }}
+                  >
+                    Company Name
+                  </FormLabel>
+                  <Input
+                    name="company"
+                    placeholder="Your Company Name"
+                    bg="white"
+                    borderColor="#D4B68C"
+                    _hover={{ borderColor: '#A67F56' }}
+                    _focus={{ borderColor: '#A67F56', boxShadow: 'none' }}
+                    _placeholder={{ color: '#A67F56', opacity: 0.5 }}
+                    size={{ base: 'sm', md: 'md' }}
+                    h={{ base: '40px', md: '48px' }}
+                  />
+                </FormControl>
+
+                <FormControl isRequired>
+                  <FormLabel
+                    color="#A67F56"
+                    fontSize={{ base: 'sm', md: 'md' }}
+                  >
+                    How Can We Help You?
+                  </FormLabel>
+                  <Textarea
+                    name="message"
+                    placeholder="Tell us about your inquiry, including product models and quantities you're interested in"
+                    rows={5}
+                    bg="white"
+                    borderColor="#D4B68C"
+                    _hover={{ borderColor: '#A67F56' }}
+                    _focus={{ borderColor: '#A67F56', boxShadow: 'none' }}
+                    _placeholder={{ color: '#A67F56', opacity: 0.5 }}
+                    size={{ base: 'sm', md: 'md' }}
+                    fontSize={{ base: 'sm', md: 'md' }}
+                  />
+                </FormControl>
+
+                <input
+                  type="hidden"
+                  name="_next"
+                  value={window.location.href}
                 />
-              </FormControl>
-
-              <FormControl isRequired>
-                <FormLabel color="#A67F56">Email Address</FormLabel>
-                <Input
-                  name="email"
-                  type="email"
-                  placeholder="Your email"
-                  bg="white"
-                  borderColor="#D4B68C"
-                  _hover={{ borderColor: '#A67F56' }}
-                  _focus={{ borderColor: '#A67F56', boxShadow: 'none' }}
-                  _placeholder={{ color: '#A67F56', opacity: 0.5 }}
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="New Contact Form Submission"
                 />
-              </FormControl>
-
-              <FormControl isRequired>
-                <FormLabel color="#A67F56">Phone Number</FormLabel>
-                <Input
-                  name="phone"
-                  placeholder="Phone number with Country Code"
-                  bg="white"
-                  borderColor="#D4B68C"
-                  _hover={{ borderColor: '#A67F56' }}
-                  _focus={{ borderColor: '#A67F56', boxShadow: 'none' }}
-                  _placeholder={{ color: '#A67F56', opacity: 0.5 }}
+                <input
+                  type="hidden"
+                  name="_autoresponse"
+                  value="Thank you for contacting Patikchi! We have received your message and will get back to you soon."
                 />
-              </FormControl>
 
-              <FormControl>
-                <FormLabel color="#A67F56">Company Name</FormLabel>
-                <Input
-                  name="company"
-                  placeholder="Your Company Name"
-                  bg="white"
-                  borderColor="#D4B68C"
-                  _hover={{ borderColor: '#A67F56' }}
-                  _focus={{ borderColor: '#A67F56', boxShadow: 'none' }}
-                  _placeholder={{ color: '#A67F56', opacity: 0.5 }}
-                />
-              </FormControl>
-
-              <FormControl isRequired>
-                <FormLabel color="#A67F56">How Can We Help You?</FormLabel>
-                <Textarea
-                  name="message"
-                  placeholder="Tell us about your inquiry, including product models and quantities you're interested in"
-                  rows={5}
-                  bg="white"
-                  borderColor="#D4B68C"
-                  _hover={{ borderColor: '#A67F56' }}
-                  _focus={{ borderColor: '#A67F56', boxShadow: 'none' }}
-                  _placeholder={{ color: '#A67F56', opacity: 0.5 }}
-                />
-              </FormControl>
-
-              <input type="hidden" name="_next" value={window.location.href} />
-              <input
-                type="hidden"
-                name="_subject"
-                value="New Contact Form Submission"
-              />
-              <input
-                type="hidden"
-                name="_autoresponse"
-                value="Thank you for contacting Patikchi! We have received your message and will get back to you soon."
-              />
-
-              <MotionBox
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <Button
-                  type="submit"
-                  bg="#D4B68C"
-                  color="white"
-                  size="lg"
-                  width="full"
-                  _hover={{ bg: '#C4A67C' }}
+                <MotionBox
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  w="full"
                 >
-                  Send Message →
-                </Button>
-              </MotionBox>
-            </VStack>
+                  <Button
+                    type="submit"
+                    bg="#D4B68C"
+                    color="white"
+                    size={{ base: 'sm', md: 'lg' }}
+                    width="full"
+                    h={{ base: '40px', md: '48px' }}
+                    fontSize={{ base: 'sm', md: 'md' }}
+                    _hover={{ bg: '#C4A67C' }}
+                  >
+                    Send Message →
+                  </Button>
+                </MotionBox>
+              </VStack>
+            </form>
           </MotionBox>
         </Box>
       </Container>
