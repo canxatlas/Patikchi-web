@@ -111,12 +111,12 @@ export default function Contact() {
               <ContactInfo
                 icon={PhoneIcon}
                 title="Phone"
-                content="+90 242 234 0661"
+                content="+90 542 234 0661"
               />
               <ContactInfo
                 icon={InfoIcon}
                 title="Address"
-                content="Zafer Mah. Mehmet Akif Cd. No:123 | Antalya, Turkey / German Ltd."
+                content="Zafer Mah. Mehmet Akif Cd. No:113 | Antalya, Turkey / Cemsan Ltd."
               />
             </VStack>
 
