@@ -102,12 +102,7 @@ export default function Contact() {
               Get in Touch
             </Text>
 
-            <VStack align="stretch" spacing={6}>
-              <ContactInfo
-                icon={EmailIcon}
-                title="Email"
-                content="info@patikchi.com"
-              />
+            <VStack spacing={6} align="start">
               <ContactInfo
                 icon={PhoneIcon}
                 title="Phone"
@@ -117,6 +112,11 @@ export default function Contact() {
                 icon={InfoIcon}
                 title="Address"
                 content="Zafer Mah. Mehmet Akif Cd. No:113 | Antalya, Turkey / Cemsan Ltd."
+              />
+              <ContactInfo
+                icon={EmailIcon}
+                title="Email"
+                content="info@patikchi.com"
               />
             </VStack>
 
