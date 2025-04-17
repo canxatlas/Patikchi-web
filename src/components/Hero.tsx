@@ -115,7 +115,7 @@ export default function Hero() {
                 <Text
                   fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}
                   color="#A67F56"
-                  opacity={0.8}
+                  fontWeight="medium"
                   textAlign={{ base: 'center', md: 'left' }}
                 >
                   Premium lambskin baby booties with natural wool inside and

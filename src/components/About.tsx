@@ -77,7 +77,7 @@ export default function About() {
             <Text
               fontSize={{ base: 'sm', md: 'md' }}
               color="#A67F56"
-              opacity={0.8}
+              fontWeight="medium"
               lineHeight="1.8"
               maxW="860px"
               px={4}

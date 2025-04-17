@@ -245,7 +245,7 @@ const ProductCard: React.FC<ProductProps> = ({
           viewport={{ once: true }}
           transition={{ ...defaultTransition, delay: 0.3 }}
         >
-          <Text color="#A67F56" opacity={0.8} mb="6">
+          <Text color="#A67F56" fontWeight="medium" mb="6">
             {description}
           </Text>
         </MotionDiv>
@@ -305,7 +305,7 @@ const ProductCard: React.FC<ProductProps> = ({
                   {size.range}
                 </Text>
                 {size.note && (
-                  <Text fontSize="sm" color="#A67F56" opacity={0.7}>
+                  <Text fontSize="sm" color="#A67F56" fontWeight="medium">
                     {size.note}
                   </Text>
                 )}
@@ -391,7 +391,7 @@ const BenefitCard: React.FC<{
     <Text fontSize="xl" color="#A67F56" fontWeight="bold" mb="3">
       {title}
     </Text>
-    <Text color="#A67F56" opacity={0.8}>
+    <Text color="#A67F56" fontWeight="medium">
       {description}
     </Text>
   </MotionDiv>
@@ -405,9 +405,9 @@ export default function Collection() {
         'Classic design with laces for a secure and adjustable fit. Soft lambskin with natural wool inside.',
       colors: [
         { color: '#8B4513', image: require('../assets/laced/brown.png') },
-        { color: '#1E90FF', image: require('../assets/laced/blue.png') },
-        { color: '#D2B48C', image: require('../assets/laced/classic.png') },
-        { color: '#F5F5DC', image: require('../assets/laced/beije.png') },
+        { color: '#151555', image: require('../assets/laced/blue.png') },
+        { color: '#C26A1E', image: require('../assets/laced/classic.png') },
+        { color: '#D2B48C', image: require('../assets/laced/beije.png') },
         { color: '#FFC0CB', image: require('../assets/laced/pink.png') },
         { color: '#87CEEB', image: require('../assets/laced/lightblue.png') },
       ],
@@ -424,9 +424,9 @@ export default function Collection() {
         'Easy on-and-off design with velcro closure. Perfect for quick changes while maintaining warmth.',
       colors: [
         { color: '#8B4513', image: require('../assets/Velcro/brown.png') },
-        { color: '#1E90FF', image: require('../assets/Velcro/blue.png') },
-        { color: '#D2B48C', image: require('../assets/Velcro/classic.png') },
-        { color: '#F5F5DC', image: require('../assets/Velcro/beije.png') },
+        { color: '#151555', image: require('../assets/Velcro/blue.png') },
+        { color: '#C26A1E', image: require('../assets/Velcro/classic.png') },
+        { color: '#D2B48C', image: require('../assets/Velcro/beije.png') },
         { color: '#FFC0CB', image: require('../assets/Velcro/pink.png') },
       ],
       sizes: [
@@ -443,9 +443,9 @@ export default function Collection() {
         'Elegant slip-on design with a cozy cuff. Stylish and practical for everyday comfort.',
       colors: [
         { color: '#8B4513', image: require('../assets/classy/brown.png') },
-        { color: '#1E90FF', image: require('../assets/classy/blue.png') },
-        { color: '#D2B48C', image: require('../assets/classy/classic.png') },
-        { color: '#F5F5DC', image: require('../assets/classy/beije.png') },
+        { color: '#151555', image: require('../assets/classy/blue.png') },
+        { color: '#C26A1E', image: require('../assets/classy/classic.png') },
+        { color: '#D2B48C', image: require('../assets/classy/beije.png') },
         { color: '#FFC0CB', image: require('../assets/classy/pink.png') },
       ],
       sizes: [
@@ -499,7 +499,7 @@ export default function Collection() {
           <Text
             fontSize={{ base: 'lg', md: 'xl' }}
             color="#A67F56"
-            opacity={0.8}
+            fontWeight="medium"
             maxW="800px"
             mx="auto"
           >
@@ -526,7 +526,7 @@ export default function Collection() {
           <Text
             fontSize={{ base: 'lg', md: 'xl' }}
             color="#A67F56"
-            opacity={0.8}
+            fontWeight="medium"
             maxW="800px"
             mx="auto"
             mb="12"

@@ -123,7 +123,7 @@ export default function Navbar() {
             }}
           >
             <Box fontSize="2xl" fontWeight="bold" color="#A67F56">
-              Patikchi
+              <span translate="no">Patikchi</span>
             </Box>
           </Link>
 

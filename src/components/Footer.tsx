@@ -46,7 +46,7 @@ export default function Footer() {
               <Text fontSize="2xl" fontWeight="bold" color="#A67F56" mb={2}>
                 Patikchi
               </Text>
-              <Text fontSize="sm" color="#A67F56" opacity={0.8}>
+              <Text fontSize="sm" color="#A67F56" fontWeight="medium">
                 Natural comfort for little feet
               </Text>
             </Box>
@@ -64,11 +64,11 @@ export default function Footer() {
 
             {/* Copyright */}
             <VStack spacing={2}>
-              <Text fontSize="sm" color="#A67F56" opacity={0.8}>
+              <Text fontSize="sm" color="#A67F56" fontWeight="medium">
                 © 2024 Patikchi. All rights reserved. Manufacturer and wholesale
                 exporter of lambskin baby booties since 1995.
               </Text>
-              <Text fontSize="xs" color="#A67F56" opacity={0.6}>
+              <Text fontSize="xs" color="#A67F56" fontWeight="medium">
                 Made with ♡ for happy little feet
               </Text>
             </VStack>

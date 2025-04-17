@@ -124,7 +124,7 @@ export default function Contact() {
               <Text fontSize="xl" fontWeight="bold" color="#A67F56" mb={4}>
                 Wholesale Inquiries
               </Text>
-              <Text color="#A67F56" opacity={0.8}>
+              <Text color="#A67F56" fontWeight="medium">
                 As a manufacturer and wholesale exporter since 1995, we only
                 accept bulk orders and distribution partnership only. Contact us
                 for special pricing and custom inquiries.
