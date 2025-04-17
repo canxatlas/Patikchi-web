@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Patikchi-web/static/css/main.ad1dbbb2.css",
-    "main.js": "/Patikchi-web/static/js/main.555f33fb.js",
-    "static/js/453.ca0239cf.chunk.js": "/Patikchi-web/static/js/453.ca0239cf.chunk.js",
-    "static/media/image1.png": "/Patikchi-web/static/media/image1.2c705d197499088b28e4.png",
-    "static/media/beije.png": "/Patikchi-web/static/media/beije.a921540e63a949e2f6e1.png",
-    "static/media/pink.png": "/Patikchi-web/static/media/pink.e67ada5ac11b430e23b3.png",
-    "static/media/blue.png": "/Patikchi-web/static/media/blue.6fafcca508f7c855365c.png",
-    "static/media/brown.png": "/Patikchi-web/static/media/brown.b9974ec4ced53ff66d13.png",
-    "static/media/classic.png": "/Patikchi-web/static/media/classic.a6f3146b620b853e723f.png",
-    "static/media/lightblue.png": "/Patikchi-web/static/media/lightblue.a0c339061484e53fcc40.png",
-    "static/media/PlayfairDisplay-VariableFont_wght.ttf": "/Patikchi-web/static/media/PlayfairDisplay-VariableFont_wght.bf46a6bcddc9999a295e.ttf",
-    "static/media/PlayfairDisplay-Italic-VariableFont_wght.ttf": "/Patikchi-web/static/media/PlayfairDisplay-Italic-VariableFont_wght.597cf3569777ae281144.ttf",
-    "index.html": "/Patikchi-web/index.html",
-    "main.ad1dbbb2.css.map": "/Patikchi-web/static/css/main.ad1dbbb2.css.map",
-    "main.555f33fb.js.map": "/Patikchi-web/static/js/main.555f33fb.js.map",
-    "453.ca0239cf.chunk.js.map": "/Patikchi-web/static/js/453.ca0239cf.chunk.js.map"
+    "main.css": "/static/css/main.a1725c3d.css",
+    "main.js": "/static/js/main.25800cb1.js",
+    "static/js/453.ca0239cf.chunk.js": "/static/js/453.ca0239cf.chunk.js",
+    "static/media/image1.png": "/static/media/image1.2c705d197499088b28e4.png",
+    "static/media/beije.png": "/static/media/beije.a921540e63a949e2f6e1.png",
+    "static/media/pink.png": "/static/media/pink.e67ada5ac11b430e23b3.png",
+    "static/media/blue.png": "/static/media/blue.6fafcca508f7c855365c.png",
+    "static/media/brown.png": "/static/media/brown.b9974ec4ced53ff66d13.png",
+    "static/media/classic.png": "/static/media/classic.a6f3146b620b853e723f.png",
+    "static/media/lightblue.png": "/static/media/lightblue.a0c339061484e53fcc40.png",
+    "static/media/PlayfairDisplay-VariableFont_wght.ttf": "/static/media/PlayfairDisplay-VariableFont_wght.bf46a6bcddc9999a295e.ttf",
+    "static/media/PlayfairDisplay-Italic-VariableFont_wght.ttf": "/static/media/PlayfairDisplay-Italic-VariableFont_wght.597cf3569777ae281144.ttf",
+    "index.html": "/index.html",
+    "main.a1725c3d.css.map": "/static/css/main.a1725c3d.css.map",
+    "main.25800cb1.js.map": "/static/js/main.25800cb1.js.map",
+    "453.ca0239cf.chunk.js.map": "/static/js/453.ca0239cf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad1dbbb2.css",
-    "static/js/main.555f33fb.js"
+    "static/css/main.a1725c3d.css",
+    "static/js/main.25800cb1.js"
   ]
 }
